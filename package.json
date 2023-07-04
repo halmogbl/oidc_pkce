@@ -1,6 +1,6 @@
 {
   "name": "oidc_pkce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OIDC PKCE: A package for generating PKCE parameters, nonce, and state for OpenID Connect authentication. Simplify secure authentication flows in web applications.",
   "main": "src/index.js",
   "repository": "https://github.com/halmogbl/oidc_pkce",
