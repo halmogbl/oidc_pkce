@@ -16,6 +16,8 @@ or using yarn
 yarn add oidc_pkce
 ```
 
+# Usage
+
 ```javascript
 import { generatePKCEandNONCEandState } from 'oidc_pkce';
 
@@ -26,7 +28,17 @@ console.log(params);
 
 ```
 
-**Note**
+```js
+{
+    "state": "XLNsfvqqlTE9QJxt7lqeJOIkh47VV8p6",
+    "nonce": "LswwqA9qb3KYQTrxzzqoSwbLgBbXXmx7",
+    "code_verifier": "QRPu08SgpA088cfsXFSruGJzvavfQlQ4LuzvlwpLGrLjgRTTy5nzonga96VsDBJR",
+    "code_challenge": "-_0S2uSeCqGW6q7tGPnonsBZVb5IUr_iX_wLSqA34Qc",
+    "code_challenge_method": "S256"
+}
+```
+
+*Explain generatePKCEandNONCEandState Parameters*
 
     - useNONCE (optional, default: true): Whether to include a nonce in the generated parameters.
     - useSTATE (optional, default: true): Whether to include a state in the generated parameters.
@@ -37,15 +49,7 @@ console.log(params);
     - nonceLength (optional, default: 32): The length of the nonce to generate.
     - Returns an object containing the generated parameters.
 
-```js
-{
-    "state": "XLNsfvqqlTE9QJxt7lqeJOIkh47VV8p6",
-    "nonce": "LswwqA9qb3KYQTrxzzqoSwbLgBbXXmx7",
-    "code_verifier": "QRPu08SgpA088cfsXFSruGJzvavfQlQ4LuzvlwpLGrLjgRTTy5nzonga96VsDBJR",
-    "code_challenge": "-_0S2uSeCqGW6q7tGPnonsBZVb5IUr_iX_wLSqA34Qc",
-    "code_challenge_method": "S256"
-}
-```
+
 
 
 
