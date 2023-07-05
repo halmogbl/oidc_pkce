@@ -10,8 +10,7 @@ using npm
 npm install oidc_pkce
 ```
 
-or using yarn
-
+using yarn
 ```shell
 yarn add oidc_pkce
 ```
