@@ -7,6 +7,19 @@
   "author": "Hamad Almogbl",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "PKCE",
+    "oauth2",
+    "state",
+    "nonce",
+    "code_challenge",
+    "code_verifier"
+  ],
+  "homepage": "https://github.com/halmogbl/oidc_pkce#readme",
+  "bugs": {
+    "url": "https://github.com/halmogbl/oidc_pkce/issues"
+  },
+
   "dependencies": {
     "base64-arraybuffer": "^1.0.2"
   }
