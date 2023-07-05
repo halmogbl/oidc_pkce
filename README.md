@@ -21,8 +21,15 @@ yarn add oidc_pkce
 ```javascript
 import { generatePKCEandNONCEandState } from 'oidc_pkce';
 
-// Generate PKCE parameters, nonce, and state
-const params = await generatePKCEandNONCEandState(useNONCE = true,useSTATE = true, usePKCE = true, codeChallengeMethod='S256',codeVerifierLength=64,stateLength=32,nonceLength=32);
+const params = await generatePKCEandNONCEandState(
+    useNONCE=true, 
+    useSTATE=true, 
+    usePKCE=true, 
+    codeChallengeMethod='S256',
+    codeVerifierLength=64,
+    stateLength=32,
+    nonceLength=32
+    );
 
 console.log(params);
 
