@@ -37,9 +37,12 @@ console.log(params);
 
 
 # API
+
+***
 ```javascript
-**generatePKCEandNONCEandState(useNONCE?, useSTATE?, usePKCE?, codeChallengeMethod?, codeVerifierLength?, stateLength?, nonceLength?)**
+generatePKCEandNONCEandState(useNONCE?, useSTATE?, usePKCE?, codeChallengeMethod?, codeVerifierLength?, stateLength?, nonceLength?)
 ```
+***
 
 Generates PKCE parameters, nonce, and state for OpenID Connect authentication.
 
