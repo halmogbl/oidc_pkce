@@ -30,9 +30,10 @@ const params = await generatePKCEandNONCEandState(
     nonceLength=32
     );
 
-console.log(params);
 
 ```
+
+console.log(params);
 
 ```js
 {
