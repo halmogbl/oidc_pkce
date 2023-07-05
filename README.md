@@ -37,7 +37,9 @@ console.log(params);
 
 
 # API
-`generatePKCEandNONCEandState(useNONCE?, useSTATE?, usePKCE?, codeChallengeMethod?, codeVerifierLength?, stateLength?, nonceLength?)`
+```javascript
+**generatePKCEandNONCEandState(useNONCE?, useSTATE?, usePKCE?, codeChallengeMethod?, codeVerifierLength?, stateLength?, nonceLength?)**
+```
 
 Generates PKCE parameters, nonce, and state for OpenID Connect authentication.
 
@@ -51,6 +53,5 @@ Generates PKCE parameters, nonce, and state for OpenID Connect authentication.
 - Returns an object containing the generated parameters.
 
 # License
-
-This package is licensed under the MIT License. See the `LICENSE` file for details.
-
+Copyright © 2023, [Hamad Almogbl](https://github.com/halmogbl).
+Released under the [MIT License](LICENSE).
