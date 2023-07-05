@@ -33,7 +33,9 @@ const params = await generatePKCEandNONCEandState(
 
 ```
 
+```js
 console.log(params);
+```
 
 ```js
 {
