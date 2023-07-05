@@ -20,10 +20,22 @@ yarn add oidc_pkce
 import { generatePKCEandNONCEandState } from 'oidc_pkce';
 
 // Generate PKCE parameters, nonce, and state
-const params = await generatePKCEandNONCEandState();
+const params = await generatePKCEandNONCEandState(useNONCE = true,useSTATE = true, usePKCE = true, codeChallengeMethod='S256',codeVerifierLength=64,stateLength=32,nonceLength=32);
 
 console.log(params);
+
 ```
+
+**Note**
+
+    - useNONCE (optional, default: true): Whether to include a nonce in the generated parameters.
+    - useSTATE (optional, default: true): Whether to include a state in the generated parameters.
+    - usePKCE (optional, default: true): Whether to include PKCE parameters (code_verifier and code_challenge) in the generated parameters.
+    - codeChallengeMethod (optional, default: 'S256'): The method used to generate the code_challenge. Supported values: 'plain' or 'S256'.
+    - codeVerifierLength (optional, default: 64): The length of the code_verifier to generate.
+    - stateLength (optional, default: 32): The length of the state to generate.
+    - nonceLength (optional, default: 32): The length of the nonce to generate.
+    - Returns an object containing the generated parameters.
 
 ```js
 {
@@ -36,24 +48,7 @@ console.log(params);
 ```
 
 
-# API
 
-***
-```javascript
-generatePKCEandNONCEandState(useNONCE?, useSTATE?, usePKCE?, codeChallengeMethod?, codeVerifierLength?, stateLength?, nonceLength?)
-```
-***
-
-Generates PKCE parameters, nonce, and state for OpenID Connect authentication.
-
-- useNONCE (optional, default: true): Whether to include a nonce in the generated parameters.
-- useSTATE (optional, default: true): Whether to include a state in the generated parameters.
-- usePKCE (optional, default: true): Whether to include PKCE parameters (code_verifier and code_challenge) in the generated parameters.
-- codeChallengeMethod (optional, default: 'S256'): The method used to generate the code_challenge. Supported values: 'plain' or 'S256'.
-- codeVerifierLength (optional, default: 64): The length of the code_verifier to generate.
-- stateLength (optional, default: 32): The length of the state to generate.
-- nonceLength (optional, default: 32): The length of the nonce to generate.
-- Returns an object containing the generated parameters.
 
 # License
 Copyright © 2023, [Hamad Almogbl](https://github.com/halmogbl).
